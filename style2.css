@@ -1,13 +1,143 @@
+body {
+    background-color: beige;
+}
+
 .containertxt1 {
     border-radius: 15px;
     border-style: solid;
     border-color: red;
     background-color: red;
     color: white;
+    width: 45%
 }
 
 .containertxt2 {
     text-align: center;
     margin: 5;
+    padding: 2;
+    width: 45%;
+}
 
+.containertxt3 {
+    text-align: center;
+    width: 50%;
+}
+
+.containertxt4 {
+    text-align: center;
+    margin: 0;
+    width: 45%;
+}
+
+.mclarenlivery {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 25;
+    padding: 5;
+    margin: 15px 60px;
+    border-radius: 15px;
+}
+
+.txt1 {
+    position:absolute;
+    top: 215px;
+    width: 22%;
+    text-align: center;
+    margin: 15px;
+}
+
+.alpinelivery {
+    height: 200px;
+    position: absolute;
+    top: 1;
+    left: 25;
+    padding: 5;
+    margin: 15px 60px;
+    border-radius: 15px;
+}
+
+.txt2 {
+    position:absolute;
+    top: 685px;
+    width: 22%;
+    text-align: center;
+    margin: 15px;
+}
+
+/*this is the cuttin point for the left and the right */
+
+.haaslivery {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5;
+    margin: 15px 60px;
+    border-radius: 15px;
+}
+
+.txt3 {
+    position:absolute;
+    top: 215px;
+    right: 15px;
+    width: 22%;
+    text-align: center;
+    margin: 15px;
+}
+
+.colapinto {
+    height: 200px;
+    position: absolute;
+    top: 1;
+    right: 0;
+    padding: 5;
+    margin: 15px 60px;
+    border-radius: 15px;
+}
+
+.txt4 {
+    position:absolute;
+    top: 685px;
+    right: 15px;
+    width: 22%;
+    text-align: center;
+    margin: 15px;
+}
+
+
+
+.btn {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover,
+.btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.btn:active {
+  background: var(--color);
+  color: #fff;
 }
